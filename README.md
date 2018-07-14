@@ -7,7 +7,7 @@ use following example :
 mysql 
 ```
 backup-mysql:
-    image: narimandelavary/container-backup
+    image: narimandelavary/container-backup:1.0.0
     entrypoint: /src/run.sh
     environment:
         BACKUP_TYPE: 'mysql'
@@ -27,7 +27,7 @@ backup-mysql:
 storage
 ```
 backup-storage:
-    image: narimandelavary/container-backup
+    image: narimandelavary/container-backup:1.0.0
     entrypoint: /src/run.sh
     volumes:
         - ./targetdirectory:/data  #* 
